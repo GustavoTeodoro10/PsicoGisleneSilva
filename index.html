@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gislene Silva | Psicóloga Clínica em Mauá - SP</title>
+<meta name="description" content="Psicoterapia acolhedora para adolescentes, adultos e casais em Mauá - SP. Atendimento online e presencial com Gislene Silva, psicóloga clínica CRP 06/186219. Nota 5,0 no Google com mais de 100 avaliações.">
+<meta name="theme-color" content="#4A6B5C">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gislene Silva | Psicóloga Clínica em Mauá - SP">
+<meta property="og:description" content="Um espaço seguro para cuidar de você. Psicoterapia acolhedora para adolescentes, adultos e casais — online e presencial. Nota 5,0 no Google (102 avaliações).">
+<meta property="og:image" content="https://psigislene.netlify.app/assets/og-image.jpg">
+<meta property="og:url" content="https://psigislene.netlify.app/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gislene Silva | Psicóloga Clínica em Mauá - SP">
+<meta name="twitter:description" content="Psicoterapia acolhedora para adolescentes, adultos e casais. Online e presencial. Nota 5,0 no Google.">
+<meta name="twitter:image" content="https://psigislene.netlify.app/assets/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'sage-dark': '#4A6B5C',
+          'sage-light': '#D4E5E0',
+          cream: '#F9F7F4',
+          beige: '#E8DFD5',
+          charcoal: '#2C3E3C',
+          gold: '#C4A574',
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          body: ['Poppins', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  :root{
+    --sage-dark:#4A6B5C;
+    --sage-light:#D4E5E0;
+    --cream:#F9F7F4;
+    --beige:#E8DFD5;
+    --charcoal:#2C3E3C;
+    --gold:#C4A574;
+  }
+  html{scroll-behavior:smooth;}
+  body{background:var(--cream); color:var(--charcoal); font-family:'Poppins',sans-serif;}
+  h1,h2,h3,.font-display{font-family:'Playfair Display',serif;}
+
+  ::selection{background:var(--gold); color:var(--cream);}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  /* scroll reveal */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.is-visible{opacity:1; transform:translateY(0);}
+  .reveal-delay-1.is-visible{transition-delay:.08s;}
+  .reveal-delay-2.is-visible{transition-delay:.16s;}
+  .reveal-delay-3.is-visible{transition-delay:.24s;}
+  .reveal-delay-4.is-visible{transition-delay:.32s;}
+
+  .divider-swoosh{
+    height:2px;
+    background:linear-gradient(90deg, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+  }
+
+  .hairline{border-color: rgba(74,107,92,0.16);}
+
+  .btn-primary{
+    background:var(--sage-dark); color:var(--cream);
+    transition: background-color .3s ease, transform .3s ease, box-shadow .3s ease;
+  }
+  .btn-primary:hover{background:#3d594c; transform:translateY(-2px); box-shadow:0 12px 24px -10px rgba(44,62,60,.45);}
+  .btn-primary:active{transform:translateY(0);}
+
+  .btn-outline{
+    border:1.5px solid var(--sage-dark); color:var(--sage-dark);
+    transition: background-color .3s ease, color .3s ease, transform .3s ease;
+  }
+  .btn-outline:hover{background:var(--sage-dark); color:var(--cream); transform:translateY(-2px);}
+
+  .btn-gold{
+    background:var(--gold); color:var(--charcoal);
+    transition: background-color .3s ease, transform .3s ease, box-shadow .3s ease;
+  }
+  .btn-gold:hover{background:#b18f5f; transform:translateY(-2px); box-shadow:0 12px 24px -10px rgba(196,165,116,.5);}
+
+  .card-lift{transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;}
+  .card-lift:hover{transform:translateY(-6px); box-shadow:0 20px 40px -20px rgba(44,62,60,.25); border-color:var(--gold);}
+
+  .nav-link{position:relative;}
+  .nav-link::after{
+    content:''; position:absolute; left:0; bottom:-4px; width:0; height:1.5px;
+    background:var(--gold); transition:width .3s ease;
+  }
+  .nav-link:hover::after{width:100%;}
+
+  .faq-toggle[aria-expanded="true"] .faq-icon{transform:rotate(45deg);}
+  .faq-icon{transition:transform .3s ease;}
+  .faq-panel{max-height:0; overflow:hidden; transition:max-height .4s ease;}
+
+  .star{color:var(--gold);}
+
+  .butterfly-accent{position:absolute; opacity:.14; pointer-events:none;}
+
+  .plan-highlight{border:1.5px solid var(--gold); box-shadow:0 20px 45px -25px rgba(196,165,116,.55);}
+
+  .skip-link{
+    position:absolute; left:-9999px; top:0; z-index:100;
+    background:var(--charcoal); color:var(--cream); padding:.75rem 1.25rem; border-radius:0 0 .5rem 0;
+  }
+  .skip-link:focus{left:0;}
+
+  .bg-noise-line{
+    background-image: radial-gradient(circle at 1px 1px, rgba(74,107,92,0.14) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+</style>
+</head>
+<body class="antialiased">
+<a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+<!-- ================= HEADER ================= -->
+<header id="topo" class="fixed top-0 inset-x-0 z-50 transition-all duration-300" data-header>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 lg:h-24">
+    <a href="#topo" class="flex items-center gap-3 group">
+      <img src="assets/logo-gislene-silva-web.png" alt="Gislene Silva - Psicóloga Clínica" class="h-12 lg:h-14 w-auto" width="200" height="183">
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-9 font-body text-[15px] text-charcoal">
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#atendimentos" class="nav-link">Atendimentos</a>
+      <a href="#oferta" class="nav-link">Planos</a>
+      <a href="#avaliacoes" class="nav-link">Avaliações</a>
+      <a href="#duvidas" class="nav-link">Dúvidas</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia." target="_blank" rel="noopener"
+       class="hidden lg:inline-flex btn-primary px-6 py-2.5 rounded-full font-medium text-sm">
+      Agendar sessão
+    </a>
+
+    <button id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" class="lg:hidden p-2 -mr-2" aria-label="Abrir menu">
+      <svg id="iconOpen" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="iconClose" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="hidden"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden lg:hidden bg-cream border-t hairline">
+    <nav class="flex flex-col px-6 py-6 gap-5 font-body text-charcoal">
+      <a href="#sobre" class="mobile-link">Sobre</a>
+      <a href="#atendimentos" class="mobile-link">Atendimentos</a>
+      <a href="#oferta" class="mobile-link">Planos</a>
+      <a href="#avaliacoes" class="mobile-link">Avaliações</a>
+      <a href="#duvidas" class="mobile-link">Dúvidas</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia." target="_blank" rel="noopener"
+         class="btn-primary text-center px-6 py-3 rounded-full font-medium mt-2">Agendar sessão</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================= HERO ================= -->
+<section class="relative overflow-hidden pt-32 pb-20 lg:pt-44 lg:pb-28" style="background:linear-gradient(180deg, var(--cream) 0%, var(--sage-light) 140%);">
+  <!-- decorative line-art rings echoing the logo -->
+  <svg class="absolute -right-40 -top-24 w-[560px] h-[560px] lg:w-[720px] lg:h-[720px] opacity-[0.16] pointer-events-none" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+    <circle cx="100" cy="100" r="92" stroke="#C4A574" stroke-width="1.2"/>
+    <circle cx="100" cy="100" r="78" stroke="#4A6B5C" stroke-width="0.8"/>
+  </svg>
+  <svg class="absolute -left-24 bottom-0 w-[320px] h-[320px] opacity-[0.12] pointer-events-none hidden lg:block" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+    <circle cx="100" cy="100" r="90" stroke="#4A6B5C" stroke-width="1"/>
+  </svg>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+    <div class="reveal is-visible">
+      <p class="font-body text-sm tracking-wide text-sage-dark/80 mb-5">
+        CRP 06/186219 · Pós-graduada em Psicologia Clínica
+      </p>
+      <h1 class="font-display text-[2.6rem] leading-[1.12] sm:text-6xl sm:leading-[1.08] text-charcoal">
+        Um espaço seguro<br class="hidden sm:block"> para cuidar de você
+      </h1>
+      <p class="mt-7 text-[1.05rem] leading-relaxed text-charcoal/80 max-w-[46ch]">
+        Com uma escuta sensível e profissional, ofereço acolhimento para adolescentes, adultos e casais que desejam compreender suas emoções, fortalecer a autoestima e viver relações mais saudáveis.
+      </p>
+
+      <div class="mt-9 flex flex-col sm:flex-row gap-4">
+        <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia." target="_blank" rel="noopener"
+           class="btn-primary inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-medium">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.94L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91.01-5.46-4.44-9.91-9.92-9.91zm5.79 14.05c-.24.68-1.41 1.3-1.94 1.35-.5.05-1.02.21-3.41-.71-2.89-1.15-4.72-4.07-4.86-4.26-.14-.19-1.16-1.55-1.16-2.95s.72-2.09.98-2.38c.24-.26.53-.33.71-.33h.5c.16 0 .38-.03.58.44.24.57.79 1.98.86 2.12.07.14.11.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.14-.28.28-.12.55.16.28.72 1.19 1.55 1.93 1.07.95 1.96 1.25 2.25 1.39.28.14.45.12.62-.07.16-.19.7-.82.89-1.1.19-.28.38-.24.63-.14.26.09 1.66.79 1.94.93.28.14.47.21.53.33.07.12.07.71-.17 1.39z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a href="#atendimentos" class="btn-outline inline-flex items-center justify-center px-8 py-4 rounded-full font-medium">
+          Entender como funciona
+        </a>
+      </div>
+    </div>
+
+    <!-- decorative emblem panel replacing the missing personal photo -->
+    <div class="relative reveal reveal-delay-2 is-visible hidden md:block">
+      <div class="relative aspect-square max-w-md mx-auto">
+        <div class="absolute inset-0 rounded-full bg-white/50 border hairline"></div>
+        <img src="assets/logo-gislene-silva-web.png" alt="Emblema Gislene Silva - Psicóloga Clínica" loading="eager"
+             class="absolute inset-0 w-full h-full object-contain p-10" width="480" height="440">
+      </div>
+      <div class="mt-6 grid grid-cols-2 gap-3 max-w-md mx-auto">
+        <div class="bg-white/70 border hairline rounded-2xl px-4 py-3 text-center">
+          <p class="font-display text-lg text-sage-dark">5,0</p>
+          <p class="text-xs text-charcoal/70">102 avaliações no Google</p>
+        </div>
+        <div class="bg-white/70 border hairline rounded-2xl px-4 py-3 text-center">
+          <p class="font-display text-lg text-sage-dark">Online</p>
+          <p class="text-xs text-charcoal/70">e presencial, em Mauá</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- credential strip -->
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 mt-16 lg:mt-24">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 reveal reveal-delay-2 is-visible">
+      <div class="bg-white/60 backdrop-blur-sm border hairline rounded-2xl px-5 py-5">
+        <p class="font-display text-lg text-charcoal">CRP 06/186219</p>
+        <p class="text-sm text-charcoal/65 mt-1">Registro profissional verificado</p>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm border hairline rounded-2xl px-5 py-5">
+        <p class="font-display text-lg text-charcoal">Pós-graduada</p>
+        <p class="text-sm text-charcoal/65 mt-1">Psicologia Clínica e Psicanálise</p>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm border hairline rounded-2xl px-5 py-5">
+        <p class="font-display text-lg text-charcoal">Atendimento humanizado</p>
+        <p class="text-sm text-charcoal/65 mt-1">Acolhimento e escuta verdadeira</p>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm border hairline rounded-2xl px-5 py-5">
+        <p class="font-display text-lg text-charcoal">Atende a todos</p>
+        <p class="text-sm text-charcoal/65 mt-1">Adolescentes, adultos e casais</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARA VOCÊ SE ================= -->
+<section class="py-24 lg:py-32">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+    <h2 class="reveal font-display text-3xl sm:text-4xl text-charcoal">Este atendimento pode ser para você se…</h2>
+    <p class="reveal reveal-delay-1 mt-4 text-charcoal/70 max-w-[52ch] mx-auto">Se você se identifica com alguma dessas situações, você não está sozinho(a). Estou aqui para ajudar.</p>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-4 text-left">
+      <!-- items -->
+      <div class="reveal flex items-start gap-3 bg-white/60 border hairline rounded-xl px-5 py-4">
+        <svg class="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A574" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Sente ansiedade com frequência</span>
+      </div>
+      <div class="reveal reveal-delay-1 flex items-start gap-3 bg-white/60 border hairline rounded-xl px-5 py-4">
+        <svg class="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A574" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Está emocionalmente sobrecarregado(a)</span>
+      </div>
+      <div class="reveal flex items-start gap-3 bg-white/60 border hairline rounded-xl px-5 py-4">
+        <svg class="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A574" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Vive conflitos nos relacionamentos</span>
+      </div>
+      <div class="reveal reveal-delay-1 flex items-start gap-3 bg-white/60 border hairline rounded-xl px-5 py-4">
+        <svg class="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A574" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Deseja fortalecer sua autoestima</span>
+      </div>
+      <div class="reveal flex items-start gap-3 bg-white/60 border hairline rounded-xl px-5 py-4">
+        <svg class="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A574" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Passa por sofrimento emocional ou luto</span>
+      </div>
+      <div class="reveal reveal-delay-1 flex items-start gap-3 bg-white/60 border hairline rounded-xl px-5 py-4">
+        <svg class="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A574" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Sente dificuldade em impor limites</span>
+      </div>
+      <div class="reveal flex items-start gap-3 bg-white/60 border hairline rounded-xl px-5 py-4">
+        <svg class="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A574" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Busca mais clareza sobre si mesmo(a)</span>
+      </div>
+      <div class="reveal reveal-delay-1 flex items-start gap-3 bg-white/60 border hairline rounded-xl px-5 py-4">
+        <svg class="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A574" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Quer viver relações mais saudáveis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ÁREAS DE ATENDIMENTO ================= -->
+<section id="atendimentos" class="py-24 lg:py-32 bg-sage-light/40">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl">
+      <h2 class="reveal font-display text-3xl sm:text-4xl text-charcoal">Áreas de atendimento</h2>
+      <p class="reveal reveal-delay-1 mt-4 text-charcoal/70">Trabalho com diversos temas que afetam o bem-estar emocional e a qualidade de vida.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="reveal card-lift bg-cream border hairline rounded-2xl p-7">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="1.6" class="mb-4"><path d="M12 21c-4-3-8-6-8-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4-4 7-8 10-.6.5-1.4.5-2 0Z"/></svg>
+        <h3 class="font-display text-xl text-charcoal">Ansiedade</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Compreender e gerenciar ansiedade com técnicas eficazes.</p>
+      </div>
+      <div class="reveal reveal-delay-1 card-lift bg-cream border hairline rounded-2xl p-7">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="1.6" class="mb-4"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>
+        <h3 class="font-display text-xl text-charcoal">Estresse e sobrecarga</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Encontrar equilíbrio emocional e bem-estar.</p>
+      </div>
+      <div class="reveal reveal-delay-2 card-lift bg-cream border hairline rounded-2xl p-7">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="1.6" class="mb-4"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+        <h3 class="font-display text-xl text-charcoal">Autoestima</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Fortalecer a confiança e o amor próprio.</p>
+      </div>
+      <div class="reveal reveal-delay-3 card-lift bg-cream border hairline rounded-2xl p-7">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="1.6" class="mb-4"><circle cx="8" cy="9" r="3.2"/><circle cx="16" cy="9" r="3.2"/><path d="M2.5 20c1-3.4 3.6-5 5.5-5s4.5 1.6 5.5 5M12.5 20c1-3.4 3.6-5 5.5-5s3.5 1.1 4.5 3.6"/></svg>
+        <h3 class="font-display text-xl text-charcoal">Relacionamentos</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Construir relações mais saudáveis e autênticas.</p>
+      </div>
+      <div class="reveal card-lift bg-cream border hairline rounded-2xl p-7">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="1.6" class="mb-4"><path d="M12 3v6m0 0-3 3m3-3 3 3M6 21h12"/></svg>
+        <h3 class="font-display text-xl text-charcoal">Dependência emocional</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Desenvolver autonomia e independência emocional.</p>
+      </div>
+      <div class="reveal reveal-delay-1 card-lift bg-cream border hairline rounded-2xl p-7">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="1.6" class="mb-4"><path d="M8 3c2 2 2 4 0 6-2 2-2 4 0 6-2 2-2 4 0 6"/><path d="M16 3c2 2 2 4 0 6-2 2-2 4 0 6-2 2-2 4 0 6"/></svg>
+        <h3 class="font-display text-xl text-charcoal">Adolescência</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Apoio durante transformações e descobertas.</p>
+      </div>
+      <div class="reveal reveal-delay-2 card-lift bg-cream border hairline rounded-2xl p-7">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="1.6" class="mb-4"><circle cx="9" cy="8" r="3"/><circle cx="15" cy="8" r="3"/><path d="M3.5 20c.8-3.2 3-5 5.5-5M20.5 20c-.8-3.2-3-5-5.5-5"/><path d="M9 13c1.4 1.2 4.6 1.2 6 0"/></svg>
+        <h3 class="font-display text-xl text-charcoal">Terapia para casais</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Fortalecer comunicação e intimidade.</p>
+      </div>
+      <div class="reveal reveal-delay-3 card-lift bg-cream border hairline rounded-2xl p-7">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="1.6" class="mb-4"><path d="M4 20V10l8-6 8 6v10"/><path d="M10 20v-6h4v6"/></svg>
+        <h3 class="font-display text-xl text-charcoal">Questões da vida adulta</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Navegar desafios e transições com clareza.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section id="sobre" class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[0.85fr_1.15fr] gap-14 items-start">
+    <div class="reveal lg:sticky lg:top-32">
+      <p class="text-sm tracking-wide text-sage-dark/80 mb-4">Sobre</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-charcoal leading-tight">Gislene Silva</h2>
+      <div class="mt-6 divider-swoosh w-20"></div>
+      <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o.%20Vi%20a%20p%C3%A1gina%20sobre%20voc%C3%AA%20no%20site." target="_blank" rel="noopener"
+         class="mt-8 inline-flex btn-primary px-7 py-3.5 rounded-full font-medium text-sm">Agendar uma sessão</a>
+    </div>
+
+    <div class="reveal reveal-delay-1 space-y-6 text-[1.02rem] leading-relaxed text-charcoal/85">
+      <p>Sou psicóloga clínica, pós-graduada em Psicologia Clínica e Psicanálise, e atendo adolescentes, adultos e casais. Meu trabalho é oferecer um espaço ético, acolhedor e seguro, onde cada pessoa possa se sentir à vontade para falar sobre sua história, suas dores e seus processos com liberdade, respeito e escuta verdadeira.</p>
+      <p>Acredito que a terapia é um caminho de autoconhecimento, fortalecimento emocional e construção de novas perspectivas. Cada sessão é um espaço onde você é visto(a) como um ser integral, com suas complexidades, contradições e potenciais.</p>
+
+      <div class="grid sm:grid-cols-3 gap-4 pt-4">
+        <div class="border-l-2 border-gold pl-4">
+          <h3 class="font-display text-lg text-charcoal">Escuta verdadeira</h3>
+          <p class="text-sm text-charcoal/70 mt-1">Sem julgamentos, com presença e atenção plena.</p>
+        </div>
+        <div class="border-l-2 border-gold pl-4">
+          <h3 class="font-display text-lg text-charcoal">Segurança emocional</h3>
+          <p class="text-sm text-charcoal/70 mt-1">Um espaço protegido para explorar suas emoções.</p>
+        </div>
+        <div class="border-l-2 border-gold pl-4">
+          <h3 class="font-display text-lg text-charcoal">Abordagem humanizada</h3>
+          <p class="text-sm text-charcoal/70 mt-1">Respeitando seu tempo e sua singularidade.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO É UMA SESSÃO ================= -->
+<section class="py-24 lg:py-32 bg-charcoal text-cream relative overflow-hidden">
+  <svg class="absolute -left-32 -bottom-32 w-[420px] h-[420px] opacity-10 pointer-events-none" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+    <circle cx="100" cy="100" r="90" stroke="#C4A574" stroke-width="1"/>
+  </svg>
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 relative">
+    <div class="max-w-2xl">
+      <h2 class="reveal font-display text-3xl sm:text-4xl">Como é uma sessão de terapia?</h2>
+      <p class="reveal reveal-delay-1 mt-5 text-cream/75 leading-relaxed">A sessão é um espaço de acolhimento, escuta e liberdade. Não se trata de julgamentos ou respostas prontas, mas de um processo construído com respeito à sua história, ao seu tempo e às suas necessidades.</p>
+      <p class="reveal reveal-delay-2 mt-4 text-cream/75 leading-relaxed">Ao longo do atendimento, você encontra um lugar seguro para compreender emoções, elaborar questões importantes e desenvolver novas formas de olhar para si e para a própria vida.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal border-t border-gold/40 pt-5">
+        <h3 class="font-display text-lg">Escuta sem julgamentos</h3>
+        <p class="mt-2 text-sm text-cream/65">Um espaço onde você pode ser autêntico(a) sem medo de ser julgado(a).</p>
+      </div>
+      <div class="reveal reveal-delay-1 border-t border-gold/40 pt-5">
+        <h3 class="font-display text-lg">Respeito ao seu tempo</h3>
+        <p class="mt-2 text-sm text-cream/65">Cada pessoa tem seu próprio ritmo. Não há pressa ou pressão.</p>
+      </div>
+      <div class="reveal reveal-delay-2 border-t border-gold/40 pt-5">
+        <h3 class="font-display text-lg">Acolhimento emocional</h3>
+        <p class="mt-2 text-sm text-cream/65">Suas emoções são válidas e serão acolhidas com sensibilidade.</p>
+      </div>
+      <div class="reveal reveal-delay-3 border-t border-gold/40 pt-5">
+        <h3 class="font-display text-lg">Construção de perspectivas</h3>
+        <p class="mt-2 text-sm text-cream/65">Juntos, exploramos novas formas de olhar para si e para a vida.</p>
+      </div>
+    </div>
+
+    <div class="reveal mt-14 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between border-t border-cream/15 pt-10">
+      <p class="font-display text-xl">Pronto para dar o primeiro passo?</p>
+      <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia." target="_blank" rel="noopener"
+         class="btn-gold inline-flex items-center justify-center px-8 py-4 rounded-full font-medium">Agendar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OFERTA / PLANOS ================= -->
+<section id="oferta" class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="reveal font-display text-3xl sm:text-4xl text-charcoal">Formatos de acompanhamento</h2>
+      <p class="reveal reveal-delay-1 mt-4 text-charcoal/70">Escolha o formato que melhor se encaixa no seu momento. Os valores são combinados diretamente pelo WhatsApp, sem burocracia.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-3 gap-6 items-stretch">
+      <!-- Sessão avulsa -->
+      <div class="reveal card-lift flex flex-col bg-white/70 border hairline rounded-3xl p-8">
+        <h3 class="font-display text-2xl text-charcoal">Sessão avulsa</h3>
+        <p class="mt-2 text-sm text-charcoal/65">Ideal para conhecer o processo terapêutico ou para quem busca apoio pontual.</p>
+        <ul class="mt-6 space-y-3 text-sm text-charcoal/80 flex-1">
+          <li class="flex gap-2"><span class="text-gold">—</span>Sessão única de 50 minutos</li>
+          <li class="flex gap-2"><span class="text-gold">—</span>Online ou presencial em Mauá</li>
+          <li class="flex gap-2"><span class="text-gold">—</span>Sem compromisso de continuidade</li>
+        </ul>
+        <p class="mt-6 text-xs uppercase tracking-wide text-charcoal/50">Valor sob consulta</p>
+        <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20vi%20o%20site%20e%20tenho%20interesse%20na%20Sess%C3%A3o%20Avulsa." target="_blank" rel="noopener"
+           class="btn-outline mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-sm">Falar sobre esse formato</a>
+      </div>
+
+      <!-- Plano 90 dias -->
+      <div class="reveal reveal-delay-1 plan-highlight flex flex-col bg-white rounded-3xl p-8 relative">
+        <span class="absolute -top-3 left-8 bg-gold text-charcoal text-xs font-medium px-3 py-1 rounded-full">Recomendado para continuidade</span>
+        <h3 class="font-display text-2xl text-charcoal mt-2">Plano 90 dias</h3>
+        <p class="mt-2 text-sm text-charcoal/65">Para quem quer construir consistência e ver evolução real ao longo dos meses.</p>
+        <ul class="mt-6 space-y-3 text-sm text-charcoal/80 flex-1">
+          <li class="flex gap-2"><span class="text-gold">—</span>Sessões semanais durante 3 meses</li>
+          <li class="flex gap-2"><span class="text-gold">—</span>Acompanhamento contínuo do processo</li>
+          <li class="flex gap-2"><span class="text-gold">—</span>Online ou presencial em Mauá</li>
+        </ul>
+        <p class="mt-6 text-xs uppercase tracking-wide text-charcoal/50">Valor sob consulta</p>
+        <a href="https://wa.me/5511951088402?text=Ol%C3%A1%2C%20vi%20o%20site%20e%20tenho%20interesse%20no%20Plano%20de%2090%20dias." target="_blank" rel="noopener"
+           class="btn-primary mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-sm">Falar sobre esse formato</a>
+      </div>
+
+      <!-- Plano 180 dias -->
+      <div class="reveal reveal-delay-2 card-lift flex flex-col bg-white/70 border hairline rounded-3xl p-8">
+        <h3 class="font-display text-2xl text-charcoal">Plano 180 dias</h3>
+        <p class="mt-2 text-sm text-charcoal/65">Para um trabalho terapêutico mais profundo, com espaço para transformações duradouras.</p>
+        <ul class="mt-6 space-y-3 text-sm text-charcoal/80 flex-1">
+          <li class="flex gap-2"><span class="text-gold">—</span>Sessões semanais durante 6 meses</li>
+          <li class="flex gap-2"><span class="text-gold">—</span>Maior aprofundamento terapêutico</li>
+          <li class="flex gap-2"><span class="text-gold">—</span>Online ou presencial em Mauá</li>
+        </ul>
+        <p class="mt-6 text-xs uppercase tracking-wide text-charcoal/50">Valor sob consulta</p>
+        <a href="https://wa.me/5511951088402?text=Ol%C3%A1%2C%20vi%20o%20site%20e%20tenho%20interesse%20no%20Plano%20de%20180%20dias." target="_blank" rel="noopener"
+           class="btn-outline mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full font-medium text-sm">Falar sobre esse formato</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="py-24 lg:py-32 bg-sage-light/40">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl">
+      <h2 class="reveal font-display text-3xl sm:text-4xl text-charcoal">Como funciona o atendimento</h2>
+      <p class="reveal reveal-delay-1 mt-4 text-charcoal/70">Um processo simples e acolhedor, do primeiro contato até o início da terapia.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="reveal relative pl-14">
+        <span class="absolute left-0 top-0 font-display text-3xl text-gold">1</span>
+        <h3 class="font-display text-lg text-charcoal">Primeiro contato</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Entre em contato pelo WhatsApp para conversar sobre suas necessidades.</p>
+      </div>
+      <div class="reveal reveal-delay-1 relative pl-14">
+        <span class="absolute left-0 top-0 font-display text-3xl text-gold">2</span>
+        <h3 class="font-display text-lg text-charcoal">Alinhamento inicial</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Discutimos o formato de atendimento que melhor se adequa a você.</p>
+      </div>
+      <div class="reveal reveal-delay-2 relative pl-14">
+        <span class="absolute left-0 top-0 font-display text-3xl text-gold">3</span>
+        <h3 class="font-display text-lg text-charcoal">Agendamento</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Marcamos sua primeira sessão em um horário conveniente.</p>
+      </div>
+      <div class="reveal reveal-delay-3 relative pl-14">
+        <span class="absolute left-0 top-0 font-display text-3xl text-gold">4</span>
+        <h3 class="font-display text-lg text-charcoal">Início da terapia</h3>
+        <p class="mt-2 text-sm text-charcoal/70">Começamos o processo terapêutico com segurança e acolhimento.</p>
+      </div>
+    </div>
+
+    <div class="reveal mt-14 text-center">
+      <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20quero%20come%C3%A7ar%20agora%20meu%20processo%20terap%C3%AAutico." target="_blank" rel="noopener"
+         class="btn-primary inline-flex items-center justify-center px-9 py-4 rounded-full font-medium">Começar agora</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AVALIAÇÕES GOOGLE ================= -->
+<section id="avaliacoes" class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+      <div class="max-w-xl">
+        <h2 class="reveal font-display text-3xl sm:text-4xl text-charcoal">Palavras de quem já viveu esse processo</h2>
+        <p class="reveal reveal-delay-1 mt-4 text-charcoal/70">Avaliações reais, extraídas diretamente do perfil no Google.</p>
+      </div>
+      <div class="reveal reveal-delay-1 flex items-center gap-4 bg-white border hairline rounded-2xl px-6 py-4">
+        <svg width="30" height="30" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.6 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.5 5.1 29.6 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21c0-1.2-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.5 15.9 18.9 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.5 5.1 29.6 3 24 3 16 3 9 7.4 6.3 14.7z"/><path fill="#4CAF50" d="M24 45c5.5 0 10.4-2.1 14.1-5.6l-6.5-5.5C29.6 35.5 26.9 36.5 24 36.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9 40.5 16 45 24 45z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.2 5.7l6.5 5.5C40.9 36.9 44 31 44 24c0-1.2-.1-2.4-.4-3.5z"/></svg>
+        <div>
+          <p class="font-display text-2xl text-charcoal leading-none">5,0</p>
+          <div class="flex items-center gap-1 mt-1" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-xs text-charcoal/60 mt-0.5">102 avaliações no Google</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- review card template -->
+      <article class="reveal card-lift bg-white border hairline rounded-2xl p-7">
+        <div class="flex items-center gap-1 mb-4" aria-label="5 de 5 estrelas">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="text-[0.95rem] text-charcoal/85 leading-relaxed">"Psicóloga maravilhosa super atenciosa comunicativa, me ajudou em muitas questões tanto pessoais quanto no relacionamento."</p>
+        <p class="mt-5 font-medium text-charcoal">Kauane Dias</p>
+        <p class="text-xs text-charcoal/55">Há 1 mês · Google</p>
+      </article>
+
+      <article class="reveal reveal-delay-1 card-lift bg-white border hairline rounded-2xl p-7">
+        <div class="flex items-center gap-1 mb-4" aria-label="5 de 5 estrelas">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="text-[0.95rem] text-charcoal/85 leading-relaxed">"Com toda certeza a melhor psicóloga de Mauá! Profissional excelente e muito competente. Indico de olhos fechados."</p>
+        <p class="mt-5 font-medium text-charcoal">Tauane Bernardi Temvryczuk</p>
+        <p class="text-xs text-charcoal/55">Há 2 meses · Local Guide no Google</p>
+      </article>
+
+      <article class="reveal reveal-delay-2 card-lift bg-white border hairline rounded-2xl p-7">
+        <div class="flex items-center gap-1 mb-4" aria-label="5 de 5 estrelas">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="text-[0.95rem] text-charcoal/85 leading-relaxed">"Estou extremamente grato pelo trabalho da psicóloga Gislene comigo. Desde a primeira sessão, me senti acolhido, respeitado e realmente compreendido."</p>
+        <p class="mt-5 font-medium text-charcoal">Juan Penha</p>
+        <p class="text-xs text-charcoal/55">Há 5 meses · Google</p>
+      </article>
+
+      <article class="reveal card-lift bg-white border hairline rounded-2xl p-7">
+        <div class="flex items-center gap-1 mb-4" aria-label="5 de 5 estrelas">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="text-[0.95rem] text-charcoal/85 leading-relaxed">"Minha experiência foi maravilhosa! Profissional muito qualificada, excelente trabalho e com muita dedicação! Amo as sessões com a Gi, tem me feito evoluir muito."</p>
+        <p class="mt-5 font-medium text-charcoal">Tchamony P. Lopes</p>
+        <p class="text-xs text-charcoal/55">Há 5 meses · Google</p>
+      </article>
+
+      <article class="reveal reveal-delay-1 card-lift bg-white border hairline rounded-2xl p-7">
+        <div class="flex items-center gap-1 mb-4" aria-label="5 de 5 estrelas">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C4A574"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="text-[0.95rem] text-charcoal/85 leading-relaxed">"Ótima profissional, tem me ajudado muito em vários aspectos da minha vida, meus parabéns pelo trabalho que vem fazendo."</p>
+        <p class="mt-5 font-medium text-charcoal">Jonis Pereira Ramos</p>
+        <p class="text-xs text-charcoal/55">Há 6 meses · Google</p>
+      </article>
+
+      <a href="https://share.google/54Jyli1k3m0otoOaM" target="_blank" rel="noopener"
+         class="reveal reveal-delay-2 card-lift flex flex-col items-center justify-center text-center bg-sage-light/50 border hairline rounded-2xl p-7 group">
+        <svg width="26" height="26" viewBox="0 0 48 48" class="mb-3"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.6 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.5 5.1 29.6 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21c0-1.2-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.5 15.9 18.9 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.5 5.1 29.6 3 24 3 16 3 9 7.4 6.3 14.7z"/><path fill="#4CAF50" d="M24 45c5.5 0 10.4-2.1 14.1-5.6l-6.5-5.5C29.6 35.5 26.9 36.5 24 36.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9 40.5 16 45 24 45z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.2 5.7l6.5 5.5C40.9 36.9 44 31 44 24c0-1.2-.1-2.4-.4-3.5z"/></svg>
+        <p class="font-medium text-charcoal">Ver todas as 102 avaliações</p>
+        <p class="text-sm text-charcoal/60 mt-1 group-hover:underline">no perfil do Google →</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="duvidas" class="py-24 lg:py-32 bg-sage-light/40">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10">
+    <div class="text-center">
+      <h2 class="reveal font-display text-3xl sm:text-4xl text-charcoal">Dúvidas frequentes</h2>
+      <p class="reveal reveal-delay-1 mt-4 text-charcoal/70">Respostas para as perguntas mais comuns sobre terapia e atendimento.</p>
+    </div>
+
+    <div class="mt-12 space-y-3" id="faqList">
+      <div class="reveal bg-white border hairline rounded-2xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="true">
+          <span class="font-medium text-charcoal">Como funciona a primeira sessão?</span>
+          <svg class="faq-icon shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-panel px-6" style="max-height:200px;">
+          <p class="pb-5 text-sm text-charcoal/75 leading-relaxed">Na primeira sessão, nos conhecemos melhor. Você compartilha o que o trouxe até aqui, e eu ouço com atenção, sem julgamentos. Essa sessão é para entender suas necessidades e estabelecer um espaço de confiança e segurança.</p>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1 bg-white border hairline rounded-2xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+          <span class="font-medium text-charcoal">O atendimento é online ou presencial?</span>
+          <svg class="faq-icon shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-panel px-6">
+          <p class="pb-5 text-sm text-charcoal/75 leading-relaxed">Os dois formatos estão disponíveis. O atendimento presencial acontece na Clínica Psiquear, em Mauá - SP, e o atendimento online pode ser feito de onde você estiver.</p>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2 bg-white border hairline rounded-2xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+          <span class="font-medium text-charcoal">Quanto tempo dura cada sessão?</span>
+          <svg class="faq-icon shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-panel px-6">
+          <p class="pb-5 text-sm text-charcoal/75 leading-relaxed">As sessões seguem a duração tradicional de 50 minutos, respeitando o tempo necessário para acolhimento e elaboração de cada tema.</p>
+        </div>
+      </div>
+
+      <div class="reveal bg-white border hairline rounded-2xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+          <span class="font-medium text-charcoal">A terapia é indicada para mim?</span>
+          <svg class="faq-icon shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-panel px-6">
+          <p class="pb-5 text-sm text-charcoal/75 leading-relaxed">Se você sente que precisa de um espaço para compreender suas emoções, fortalecer sua autoestima ou melhorar seus relacionamentos, a terapia pode te ajudar — não é preciso estar em crise para começar.</p>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1 bg-white border hairline rounded-2xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+          <span class="font-medium text-charcoal">Como faço para agendar?</span>
+          <svg class="faq-icon shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-panel px-6">
+          <p class="pb-5 text-sm text-charcoal/75 leading-relaxed">Basta entrar em contato pelo WhatsApp. Conversamos sobre suas necessidades, alinhamos o formato de atendimento e marcamos sua primeira sessão em um horário conveniente.</p>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2 bg-white border hairline rounded-2xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+          <span class="font-medium text-charcoal">O atendimento é sigiloso?</span>
+          <svg class="faq-icon shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-panel px-6">
+          <p class="pb-5 text-sm text-charcoal/75 leading-relaxed">Sim. O atendimento é totalmente confidencial e sigiloso, conforme o código de ética profissional da Psicologia.</p>
+        </div>
+      </div>
+
+      <div class="reveal bg-white border hairline rounded-2xl overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+          <span class="font-medium text-charcoal">Você atende adolescentes, adultos e casais?</span>
+          <svg class="faq-icon shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6B5C" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-panel px-6">
+          <p class="pb-5 text-sm text-charcoal/75 leading-relaxed">Sim, atendo os três públicos, sempre com uma abordagem adequada às necessidades específicas de cada fase da vida ou tipo de relação.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal mt-12 text-center">
+      <p class="text-charcoal/70">Ainda tem dúvidas? Entre em contato!</p>
+      <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20atendimento." target="_blank" rel="noopener"
+         class="btn-primary mt-4 inline-flex items-center justify-center px-8 py-4 rounded-full font-medium">Conversar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section id="contato" class="py-24 lg:py-32">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center">
+    <h2 class="reveal font-display text-3xl sm:text-[2.6rem] leading-tight text-charcoal">Dar o primeiro passo pode ser mais simples do que parece</h2>
+    <p class="reveal reveal-delay-1 mt-5 text-charcoal/75 max-w-[54ch] mx-auto">Se você sente que precisa de um espaço de acolhimento, esse pode ser o começo de uma transformação. Estou aqui para ouvir, acolher e caminhar com você.</p>
+    <a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia." target="_blank" rel="noopener"
+       class="reveal reveal-delay-2 btn-primary mt-9 inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full font-medium">
+      Agendar pelo WhatsApp
+    </a>
+    <p class="reveal reveal-delay-3 mt-4 text-sm text-charcoal/55">Respondo rapidamente e com acolhimento.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-charcoal text-cream pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div>
+        <img src="assets/logo-gislene-silva-web.png" alt="Gislene Silva - Psicóloga Clínica" class="h-16 w-auto mb-4" loading="lazy" width="200" height="183">
+        <p class="text-sm text-cream/65">Psicóloga Clínica · CRP 06/186219</p>
+        <p class="text-sm text-cream/65">Pós-graduada em Psicologia Clínica e Psicanálise</p>
+      </div>
+
+      <div>
+        <h3 class="font-display text-lg mb-4">Contato</h3>
+        <ul class="space-y-3 text-sm text-cream/70">
+          <li>
+            <a href="https://wa.me/5511951088402" target="_blank" rel="noopener" class="hover:text-gold transition-colors">+55 11 95108-8402</a>
+          </li>
+          <li>
+            <a href="mailto:psigislenesilva@outlook.com" class="hover:text-gold transition-colors break-all">psigislenesilva@outlook.com</a>
+          </li>
+          <li class="text-cream/70">R. dos Bandeirantes, 215 — Vila Bocaina<br>Mauá - SP, 09310-360<br>Clínica Psiquear</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display text-lg mb-4">Navegação</h3>
+        <ul class="space-y-3 text-sm text-cream/70">
+          <li><a href="#sobre" class="hover:text-gold transition-colors">Sobre</a></li>
+          <li><a href="#atendimentos" class="hover:text-gold transition-colors">Atendimentos</a></li>
+          <li><a href="#oferta" class="hover:text-gold transition-colors">Planos</a></li>
+          <li><a href="#avaliacoes" class="hover:text-gold transition-colors">Avaliações</a></li>
+          <li><a href="#duvidas" class="hover:text-gold transition-colors">Dúvidas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display text-lg mb-4">Redes sociais</h3>
+        <div class="flex gap-3">
+          <a href="https://wa.me/5511951088402" target="_blank" rel="noopener" aria-label="WhatsApp"
+             class="w-11 h-11 rounded-full border border-cream/25 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-charcoal transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.94L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91.01-5.46-4.44-9.91-9.92-9.91zm5.79 14.05c-.24.68-1.41 1.3-1.94 1.35-.5.05-1.02.21-3.41-.71-2.89-1.15-4.72-4.07-4.86-4.26-.14-.19-1.16-1.55-1.16-2.95s.72-2.09.98-2.38c.24-.26.53-.33.71-.33h.5c.16 0 .38-.03.58.44.24.57.79 1.98.86 2.12.07.14.11.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.14-.28.28-.12.55.16.28.72 1.19 1.55 1.93 1.07.95 1.96 1.25 2.25 1.39.28.14.45.12.62-.07.16-.19.7-.82.89-1.1.19-.28.38-.24.63-.14.26.09 1.66.79 1.94.93.28.14.47.21.53.33.07.12.07.71-.17 1.39z"/></svg>
+          </a>
+          <a href="https://instagram.com/psigislene.silva" target="_blank" rel="noopener" aria-label="Instagram"
+             class="w-11 h-11 rounded-full border border-cream/25 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-charcoal transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+        </div>
+        <a href="https://share.google/54Jyli1k3m0otoOaM" target="_blank" rel="noopener" class="inline-block mt-5 text-sm text-cream/70 hover:text-gold transition-colors">Ver perfil no Google →</a>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-cream/15 flex flex-col items-center gap-2 text-center">
+      <p class="text-sm text-cream/60">© 2026 Gislene Silva - Todos os direitos reservados.</p>
+      <p class="text-xs text-cream/40">Atendimento confidencial e sigiloso conforme código de ética profissional.</p>
+      <p class="text-xs text-cream/45 mt-3">Site desenvolvido por <a href="https://teocode.com.br/" target="_blank" rel="noopener" class="underline hover:text-gold">TeoCode</a> · © 2026 TeoCode</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button (mobile-friendly) -->
+<a href="https://wa.me/5511951088402?text=Ol%C3%A1%20Gislene%2C%20vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia." target="_blank" rel="noopener"
+   aria-label="Agendar pelo WhatsApp"
+   class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-sage-dark text-cream flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-transform">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.94L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91.01-5.46-4.44-9.91-9.92-9.91zm5.79 14.05c-.24.68-1.41 1.3-1.94 1.35-.5.05-1.02.21-3.41-.71-2.89-1.15-4.72-4.07-4.86-4.26-.14-.19-1.16-1.55-1.16-2.95s.72-2.09.98-2.38c.24-.26.53-.33.71-.33h.5c.16 0 .38-.03.58.44.24.57.79 1.98.86 2.12.07.14.11.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.14-.28.28-.12.55.16.28.72 1.19 1.55 1.93 1.07.95 1.96 1.25 2.25 1.39.28.14.45.12.62-.07.16-.19.7-.82.89-1.1.19-.28.38-.24.63-.14.26.09 1.66.79 1.94.93.28.14.47.21.53.33.07.12.07.71-.17 1.39z"/></svg>
+</a>
+
+<script>
+  // Header background on scroll
+  const header = document.querySelector('[data-header]');
+  function updateHeader(){
+    if(window.scrollY > 12){
+      header.classList.add('bg-cream/90','backdrop-blur-md','shadow-sm');
+    } else {
+      header.classList.remove('bg-cream/90','backdrop-blur-md','shadow-sm');
+    }
+  }
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, {passive:true});
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const iconOpen = document.getElementById('iconOpen');
+  const iconClose = document.getElementById('iconClose');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('hidden') === false;
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+    iconOpen.classList.toggle('hidden', isOpen);
+    iconClose.classList.toggle('hidden', !isOpen);
+  });
+  document.querySelectorAll('#mobileMenu a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded','false');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  revealEls.forEach(el => io.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-toggle').forEach(btn => {
+    const panel = btn.nextElementSibling;
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-toggle').forEach(other => {
+        other.setAttribute('aria-expanded','false');
+        other.nextElementSibling.style.maxHeight = null;
+      });
+      if(!expanded){
+        btn.setAttribute('aria-expanded','true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+
+<!-- Analytics placeholder: insira aqui o Google Analytics (GA4) ou Meta Pixel do cliente -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script> -->
+
+</body>
+</html>
